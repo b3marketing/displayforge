@@ -15,5 +15,5 @@ jobs:
           secret_key: ${{ secrets.DO_SECRET_KEY }}
           space_name: ${{ secrets.DO_STORAGE_NAME }}
           space_region: ${{ secrets.DO_SPACE_REGION }}
-          source: src
+          source: displayforge.js
           out_dir: publicItems/displayforge/
