@@ -1,0 +1,80 @@
+
+    // Listing Values 
+
+    /*
+    {
+    "context": "RESULT",
+    "id": "223010974_151",
+    "listingNumber": "223010974",
+    "boardId": 151,
+    "featured": false,
+    "statusId": "active",
+    "statusLabel": "Active",
+    "propertyTypeId": "SFR",
+    "propertyTypeLabel": "House",
+    "displayPropertyTypeOnResults": true,
+    "address": [
+    "15300 ALLEN WAY",
+    "FORT MYERS, FL 33908"
+    ],
+    "city": "FORT MYERS",
+    "state": "FL",
+    "postalCode": "33908",
+    "bedrooms": 4,
+    "fullBathrooms": 3,
+    "partialBathrooms": 3,
+    "squareFeet": 5024,
+    "listPrice": 9995000,
+    "latitude": 26.51764,
+    "longitude": -81.96888,
+    "listingPageUrl": "https://www.benlyonsrealtor.com/listings/listing?id=223010974_151",
+    "sellersRepFormatted": "Listing Courtesy of: The Agency Naples\r\n",
+    "brokerDisplayPlacementId": "bottom",
+    "brokerDisplayFormatted": "Listing Courtesy of: The Agency Naples\r\n",
+    "imageCount": 39,
+    "images": [
+    {
+    "url": "https://pix.idxre.com/pix/FLSMLS/main/0/223010974_0.jpg"
+    }
+    ],
+    "openHouses": [],
+    "features": [],
+    "similarListingIds": [],
+    "resultsPhotoOverlay": true,
+    "showCopyrightCompliance": false,
+    "resultsBoardLogo": "https://secure.idxre.com/idx/images/idxlogo/shared_brRecip.gif",
+    "board": {
+    "id": 151,
+    "name": "Southwest Florida MLS",
+    "region": "Collier County and Lee County Areas of Southwest Florida",
+    "canadian": false,
+    "listTrac": false,
+    "socialNetworkingBlock": {
+    "id": 0
+    },
+    "demo": false
+    },
+    "status": {
+    "id": "active",
+    "label": "Active"
+    },
+    "propertyType": {
+    "id": "SFR",
+    "label": "House"
+    },
+    "addressOneLine": "15300 ALLEN WAY FORT MYERS, FL 33908",
+    "bathrooms": 6,
+    "contiguous": true,
+    "brokerDisplayPlacement": {
+    "id": "bottom"
+    },
+    "sellersRepPlacement": {
+    "id": 4
+    },
+    "upcomingOpenHouses": [],
+    "upcomingVirtualOpenHouses": [],
+    "mainImageUrl": "https://pix.idxre.com/pix/FLSMLS/main/0/223010974_0.jpg",
+    "similarListings": []
+    }
+
+    */
