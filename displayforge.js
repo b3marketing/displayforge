@@ -250,6 +250,7 @@ $(document).ready(function () {
     
           // If dfWidgets exist, get the display element and push it into dfDisplays.
           if (dfElements.length > 0) {
+            console.log("Display Forge Widgets Found");
             return Array.from(dfElements);
           } else {
             console.log("No Display Forge Widgets Found");
@@ -278,11 +279,13 @@ $(document).ready(function () {
         console.log('Waiting for element to exist');
         return new Promise(resolve => {
           if (Array.from(document.querySelector(".df-widget").querySelector(".ihf-container").shadowRoot.querySelectorAll(".widget-container > .ui-grid > .ui-grid-item:first-child > .ui-grid > .ui-grid")).length > 3) {
+            console.log('Element exists');
             return resolve();
           }
       
           const observer = new MutationObserver(() => {
             if (Array.from(document.querySelector(".df-widget").querySelector(".ihf-container").shadowRoot.querySelectorAll(".widget-container > .ui-grid > .ui-grid-item:first-child > .ui-grid > .ui-grid")).length > 3) {
+              console.log('Element exists');
               resolve();
               observer.disconnect();
             }
@@ -295,7 +298,7 @@ $(document).ready(function () {
         });
       }
       
-      // 👇️ using the function
+      // using the function
       waitForElementToExist().then( () => {
         console.log('The element exists');
         displayForge();
