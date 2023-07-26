@@ -1,7 +1,7 @@
 // Version: 1.0
 // Current Working Script DisplayForge
 $(document).ready(function () {
-
+    console.log("Display Forge Loaded");
     const displayForge = () => {
         /* This doesn't work because urls are different.
                 let imageURLBase = `https://pix.idxre.com/pix/FLSMLS/main/0/223010974_0.jpg`;
@@ -275,6 +275,7 @@ $(document).ready(function () {
 
     
       function waitForElementToExist() {
+        console.log('Waiting for element to exist');
         return new Promise(resolve => {
           if (Array.from(document.querySelector(".df-widget").querySelector(".ihf-container").shadowRoot.querySelectorAll(".widget-container > .ui-grid > .ui-grid-item:first-child > .ui-grid > .ui-grid")).length > 3) {
             return resolve();
