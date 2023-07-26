@@ -176,9 +176,14 @@ $(document).ready(function () {
             return this.container.shadowRoot;
           }
           getListings() {
-            return this.shadow.querySelectorAll(
+            let listings = this.shadow.querySelectorAll(
               ".shadow-root > .widget-container > .ui-grid > .ui-grid-item:first-child > .ui-grid > .ui-grid"
             );
+            // set display none for each listing
+            listings.forEach((listing) => {
+              listing.style.display = "none";
+            });
+            return listings;
           }
           getReactMethod() {
             // for the first item in the listingElements array, retreive methods that include "__reactProps" in the name.
@@ -221,7 +226,7 @@ $(document).ready(function () {
     
             this.display.querySelector(".df-template").style.display = "none";
             console.log(this.container)
-            this.container.style.display = "none";
+            
           }
 
           // Create mutation observer to watch this.shadow for changes. If changes are detected, run this.writeOverListingItems();
