@@ -220,7 +220,7 @@ $(document).ready(function () {
             });
     
             this.display.querySelector(".df-template").remove();
-            this.container.style('display', 'none');
+            this.container.style.display = "none";
           }
 
           // Create mutation observer to watch this.shadow for changes. If changes are detected, run this.writeOverListingItems();
