@@ -1,3 +1,4 @@
+// Version: 1.0
 // Current Working Script DisplayForge
 $(document).ready(function () {
 
@@ -225,7 +226,7 @@ $(document).ready(function () {
           watchForChanges() {
             const observer = new MutationObserver(() => {
               console.log("Changes Detected");
-              
+
               this.createListingItems();
               this.writeOverListingItems();
             });
