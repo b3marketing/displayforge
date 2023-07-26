@@ -308,13 +308,15 @@ $(document).ready(function () {
     });
   }
 
-  // using the function
+  // make sure df-widget exists on the page before doing anything
+  if (!document.querySelector(".df-widget")) {
+    return;
+  } 
+
   waitForElementToExist().then(() => {
     console.log('The element exists');
     displayForge();
   });
-
-  // Run DisplayForge
 
 });
 
