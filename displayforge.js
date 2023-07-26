@@ -291,7 +291,7 @@ $(document).ready(function () {
             }
           });
       
-          observer.observe(document.body, {
+          observer.observe(document.querySelector(".df-widget").querySelector(".ihf-container").shadowRoot, {
             subtree: true,
             childList: true,
           });
