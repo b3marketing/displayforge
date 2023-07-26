@@ -234,7 +234,7 @@ $(document).ready(function () {
           Webflow.require('ix2').init();
           document.dispatchEvent(new Event('readystatechange'));
         }
-        if(document.querySelector('#loader')) {
+        if($('#loader').fadeOut()) {
           $('#loader').fadeOut();
         }
 
