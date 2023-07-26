@@ -220,6 +220,20 @@ $(document).ready(function () {
     
             this.display.querySelector(".df-template").remove();
           }
+
+          // Create mutation observer to watch this.shadow for changes. If changes are detected, run this.writeOverListingItems();
+          watchForChanges() {
+            const observer = new MutationObserver(() => {
+              console.log("Changes Detected");
+              
+              this.createListingItems();
+              this.writeOverListingItems();
+            });
+            observer.observe(this.shadow, {
+              subtree: true,
+              childList: true,
+            });
+          }
         }
     
         const getDFInstances = () => {
@@ -238,12 +252,9 @@ $(document).ready(function () {
           let dfInstances = getDFInstances();
           let forges = [];
           dfInstances.forEach((dfInstance) => {
-            // create async function that checks for new listings at dfInstance.querySelectorAll('.shadow-root > .widget-container > .ui-grid > .ui-grid-item:first-child > .ui-grid > .ui-grid'), if no listings are found, set timeout and rerun function.
-            // if new listings are found, create new DisplayForge and push it into forges array.
-
-
-    
+            
               forges.push(new DisplayForge(dfInstance));
+              
           });
     
           return forges;
@@ -255,7 +266,6 @@ $(document).ready(function () {
       };
 
     
-      // async function that
       function waitForElementToExist() {
         return new Promise(resolve => {
           if (Array.from(document.querySelector(".df-widget").querySelector(".ihf-container").shadowRoot.querySelectorAll(".widget-container > .ui-grid > .ui-grid-item:first-child > .ui-grid > .ui-grid")).length > 3) {
