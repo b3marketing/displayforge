@@ -219,7 +219,8 @@ $(document).ready(function () {
               this.display.appendChild(el);
             });
     
-            this.display.querySelector(".df-template").remove();
+            this.display.querySelector(".df-template").style.display = "none";
+            console.log(this.container)
             this.container.style.display = "none";
           }
 
