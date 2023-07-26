@@ -234,10 +234,9 @@ $(document).ready(function () {
           Webflow.require('ix2').init();
           document.dispatchEvent(new Event('readystatechange'));
         }
-        if($('#loader').fadeOut()) {
+        if($('#loader')) {
           $('#loader').fadeOut();
         }
-
       }
 
       // Create mutation observer to watch this.shadow for changes. If changes are detected, run this.writeOverListingItems();
